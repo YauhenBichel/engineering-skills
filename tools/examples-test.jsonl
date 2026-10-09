@@ -1,0 +1,142 @@
+{"skill": "clarify-requirements", "text": "The dashboard needs to show user activity. What counts as active right now?"}
+{"skill": "clarify-requirements", "text": "Can you outline the exact inputs the API will accept and the response format?"}
+{"skill": "clarify-requirements", "text": "I mentioned a reporting feature. Should it export to PDF, CSV, or both?"}
+{"skill": "break-down-work", "text": "We need to add dark mode. What are the first steps to tackle this?"}
+{"skill": "break-down-work", "text": "How should we structure the migration from REST to GraphQL? List the phases."}
+{"skill": "break-down-work", "text": "For the new auth flow, what order should we implement the pieces?"}
+{"skill": "estimate-and-risks", "text": "Roughly how many days will the payment integration take? What could delay us?"}
+{"skill": "estimate-and-risks", "text": "How fast can we swap the database driver? Any compatibility concerns?"}
+{"skill": "estimate-and-risks", "text": "Is switching to Redis for caching realistic this sprint? What are the bottlenecks?"}
+{"skill": "design-architecture", "text": "How should we split the monolith? What boundaries make sense for the new services?"}
+{"skill": "design-architecture", "text": "Draw the data flow between the mobile app, backend, and third party."}
+{"skill": "design-architecture", "text": "We need a scalable event bus. What components should handle routing and persistence?"}
+{"skill": "write-adr", "text": "Record why we picked PostgreSQL over MongoDB for the user store."}
+{"skill": "write-adr", "text": "Document the decision to use gRPC instead of REST for internal services."}
+{"skill": "write-adr", "text": "Save the rationale for choosing the new template engine over the old one."}
+{"skill": "design-api", "text": "What should the request payload and error codes look like for the new endpoint?"}
+{"skill": "design-api", "text": "Define the schema for the webhook we will send to the partner."}
+{"skill": "design-api", "text": "How should the client paginate the search results? What query params do we need?"}
+{"skill": "model-data", "text": "How should we structure the table for audit logs with high write throughput?"}
+{"skill": "model-data", "text": "What indexes do we need for the user orders collection?"}
+{"skill": "model-data", "text": "Draft the migration to add the role column without downtime."}
+{"skill": "implement-feature", "text": "Build the file upload handler that saves to S3 and updates the DB."}
+{"skill": "implement-feature", "text": "Code the export button that zips the generated reports and sends them via email."}
+{"skill": "implement-feature", "text": "Implement the retry logic for expired JWT tokens on the client side."}
+{"skill": "write-python", "text": "Refactor this loop to use a list comprehension and type hints."}
+{"skill": "write-python", "text": "How do I properly handle async context managers in this library?"}
+{"skill": "write-python", "text": "Show me the Pythonic way to parse this nested JSON payload."}
+{"skill": "write-go", "text": "How should I define the interface for the cache store in Go?"}
+{"skill": "write-go", "text": "Write a goroutine pool that reuses worker functions safely."}
+{"skill": "write-go", "text": "What's the cleanest way to unmarshal this configuration file in Go?"}
+{"skill": "write-typescript", "text": "Define the generic types for this repository class."}
+{"skill": "write-typescript", "text": "How do I type the props for the nested component tree?"}
+{"skill": "write-typescript", "text": "Show me the intersection type for merging these two config objects."}
+{"skill": "write-sql", "text": "Write a query to find the top 5 users by session duration."}
+{"skill": "write-sql", "text": "How do I safely upsert rows without violating constraints?"}
+{"skill": "write-sql", "text": "Create an index that speeds up the full-text search on the articles table."}
+{"skill": "write-cli", "text": "Add a --verbose flag that toggles debug output without breaking existing scripts."}
+{"skill": "write-cli", "text": "How should the tool parse both YAML and TOML input files?"}
+{"skill": "write-cli", "text": "Make the progress bar update in place without flushing the pipe every tick."}
+{"skill": "concurrency", "text": "How do I safely share the connection pool across twelve goroutines?"}
+{"skill": "concurrency", "text": "Prevent deadlocks when three threads write to the same log file."}
+{"skill": "concurrency", "text": "Use a semaphore to limit concurrent database connections without starving readers."}
+{"skill": "algorithms", "text": "What data structure fits fast prefix matching for the autocomplete feature?"}
+{"skill": "algorithms", "text": "How do I optimize the nearest neighbor search for the geo queries?"}
+{"skill": "algorithms", "text": "Find the most efficient way to deduplicate these sorted lists."}
+{"skill": "write-tests", "text": "Write unit tests for the validation function covering edge cases."}
+{"skill": "write-tests", "text": "Set up integration tests that spin up a dummy server and assert responses."}
+{"skill": "write-tests", "text": "Mock the external payment gateway so we can test failure paths."}
+{"skill": "debug", "text": "The cache returns stale data under load. Trace why the TTL isn't refreshing."}
+{"skill": "debug", "text": "Why am I getting a null pointer on this specific user agent string?"}
+{"skill": "debug", "text": "The API hangs on the fourth request. Check the thread dump for leaks."}
+{"skill": "review-code", "text": "Scan this diff for potential race conditions and memory leaks."}
+{"skill": "review-code", "text": "Are there any security gaps in the authentication middleware?"}
+{"skill": "review-code", "text": "Check the query performance and flag any unindexed joins."}
+{"skill": "refactor", "text": "Extract the repetitive configuration parsing into a separate module."}
+{"skill": "refactor", "text": "Flatten this deeply nested callback chain into something readable."}
+{"skill": "refactor", "text": "Split the monolithic handler into focused microfunctions without changing outputs."}
+{"skill": "performance", "text": "Profile the image processing pipeline and cut the render time in half."}
+{"skill": "performance", "text": "Reduce memory usage when streaming large CSV dumps to clients."}
+{"skill": "performance", "text": "Optimize the loop that aggregates daily metrics across ten thousand records."}
+{"skill": "security-review", "text": "Check the input sanitization for SQL injection and XSS vectors."}
+{"skill": "security-review", "text": "Are any secrets hardcoded in the configuration files?"}
+{"skill": "security-review", "text": "Verify the CORS policy only allows trusted origins and proper headers."}
+{"skill": "handle-errors-and-logging", "text": "Set up structured logging that captures request IDs and stack traces."}
+{"skill": "handle-errors-and-logging", "text": "How do we gracefully handle timeouts without crashing the worker?"}
+{"skill": "handle-errors-and-logging", "text": "Add fallback logic when the upstream notification service goes down."}
+{"skill": "git-workflow", "text": "Rebase this feature branch onto main and resolve the merge conflict in utils."}
+{"skill": "git-workflow", "text": "How do I squash the last five commits before pushing to origin?"}
+{"skill": "git-workflow", "text": "Create a hotfix branch and cherry-pick the security patch into staging."}
+{"skill": "ci-cd", "text": "Configure the pipeline to run tests and deploy on every push to develop."}
+{"skill": "ci-cd", "text": "Add a rollback step if the health check fails after deployment."}
+{"skill": "ci-cd", "text": "Cache the dependency directory to speed up the next build run."}
+{"skill": "containers-and-deploy", "text": "Optimize the Dockerfile layers to reduce the image size below 100MB."}
+{"skill": "containers-and-deploy", "text": "Write a compose file that links the app to Postgres and Redis."}
+{"skill": "containers-and-deploy", "text": "Set up Kubernetes manifests for horizontal scaling with a readiness probe."}
+{"skill": "dependencies", "text": "Upgrade the React version to 18 without breaking the existing components."}
+{"skill": "dependencies", "text": "Remove lodash from the bundle and replace it with native methods."}
+{"skill": "dependencies", "text": "Check for CVEs in the current Python packages before merging."}
+{"skill": "observability", "text": "Add metrics for request latency and export them to Prometheus."}
+{"skill": "observability", "text": "How do I trace HTTP calls across the service mesh?"}
+{"skill": "observability", "text": "Set up alerts for CPU usage exceeding eighty percent for five minutes."}
+{"skill": "incident-response", "text": "The database is locked up. What are the immediate steps to clear it?"}
+{"skill": "incident-response", "text": "Draft the status page update for the current outage."}
+{"skill": "incident-response", "text": "How do we quickly restart the workers without dropping active sessions?"}
+{"skill": "data-durability", "text": "Design a backup schedule that meets the RPO of fifteen minutes."}
+{"skill": "data-durability", "text": "How do we replicate the user store across two regions safely?"}
+{"skill": "data-durability", "text": "Test the restore process using last week's dump to verify integrity."}
+{"skill": "write-docs", "text": "Write the onboarding guide for new engineers setting up the local environment."}
+{"skill": "write-docs", "text": "Update the API reference with the new rate limiting parameters."}
+{"skill": "write-docs", "text": "Create a troubleshooting FAQ for the common deployment errors."}
+{"skill": "explain-code", "text": "Walk me through how this reducer updates the state tree."}
+{"skill": "explain-code", "text": "What does this regex pattern actually match in the logs?"}
+{"skill": "explain-code", "text": "Break down the lifecycle methods and why they run in this order."}
+{"skill": "data-analysis", "text": "Plot the conversion funnel and identify where users drop off most."}
+{"skill": "data-analysis", "text": "Calculate the average session duration segmented by device type."}
+{"skill": "data-analysis", "text": "Extract the top correlated fields from the performance dataset."}
+{"skill": "ml-experiment", "text": "Train the model on the cleaned dataset and track validation loss."}
+{"skill": "ml-experiment", "text": "Compare accuracy across three learning rates using cross-validation."}
+{"skill": "ml-experiment", "text": "Run hyperparameter tuning with grid search and log the best scores."}
+{"skill": "research-and-compare", "text": "Compare Bun, Deno, and Node for our specific WebSocket workload."}
+{"skill": "research-and-compare", "text": "Evaluate the trade-offs between GraphQL subscriptions and server-sent events."}
+{"skill": "research-and-compare", "text": "Which vector database handles our query patterns most efficiently?"}
+{"skill": "none", "text": "Hey, how's the weather today?"}
+{"skill": "none", "text": "What is the capital of Peru?"}
+{"skill": "none", "text": "Translate hello world to Japanese."}
+{"skill": "none", "text": "Tell me a short joke about compilers."}
+{"skill": "none", "text": "15 times 8 equals what?"}
+{"skill": "none", "text": "Thanks for the help!"}
+{"skill": "none", "text": "Can you make that shorter?"}
+{"skill": "none", "text": "What time is the team standup?"}
+{"skill": "none", "text": "Do you know any good coffee shops near here?"}
+{"skill": "none", "text": "Write a haiku about servers."}
+{"skill": "none", "text": "Which browser is fastest right now?"}
+{"skill": "none", "text": "Summarize the rules of chess."}
+{"skill": "none", "text": "What does the acronym HTTP stand for?"}
+{"skill": "none", "text": "I need to buy milk later."}
+{"skill": "none", "text": "Show me the current date and time."}
+{"skill": "none", "text": "How do I make sourdough bread?"}
+{"skill": "none", "text": "What's the plot of Inception?"}
+{"skill": "none", "text": "Fix the grammar here: she don't likes apples."}
+{"skill": "none", "text": "Generate a random password for me."}
+{"skill": "none", "text": "Why is the sky blue?"}
+{"skill": "none", "text": "List three benefits of meditation."}
+{"skill": "none", "text": "What's the distance to the moon?"}
+{"skill": "none", "text": "Can you speak Spanish?"}
+{"skill": "none", "text": "I'm running late to lunch."}
+{"skill": "none", "text": "Draft a birthday message for my colleague."}
+{"skill": "none", "text": "What year did the internet launch?"}
+{"skill": "none", "text": "Explain quantum computing simply."}
+{"skill": "none", "text": "Recommend a podcast about space."}
+{"skill": "none", "text": "How many inches are in a foot?"}
+{"skill": "none", "text": "Print the first five primes."}
+{"skill": "none", "text": "I appreciate the quick response."}
+{"skill": "none", "text": "What's the best way to learn piano?"}
+{"skill": "none", "text": "Do you have feelings?"}
+{"skill": "none", "text": "Write a short poem about rain."}
+{"skill": "none", "text": "What's the population of Tokyo?"}
+{"skill": "none", "text": "How do I tie a tie?"}
+{"skill": "none", "text": "Tell me something interesting about ants."}
+{"skill": "none", "text": "I need to schedule a dentist appointment."}
+{"skill": "none", "text": "What's the square root of 144?"}
+{"skill": "none", "text": "Thanks, that fixed it."}
