@@ -39,6 +39,18 @@ skills work with any model.
 - **Claude Code and other Agent Skills tools:** copy or link a skill folder into their skills folder.
 - **Any chat:** paste a `SKILL.md` as the system prompt, or in front of your question.
 
+## Guessing the skill from a message
+
+`tools/examples.jsonl` has 244 example messages (6 for each skill, plus 40 that need no skill), and
+`tools/examples-test.jsonl` has 142 more, written separately, for testing. A program can pick a skill
+for a message by finding the nearest examples (embeddings), with the "none" examples competing.
+
+`python3 tools/measure_guess.py` measures it. With bge-m3 embeddings and the default limits (k 2,
+threshold 0.55, margin 0.06): of the 102 test messages that need a skill, 30 got the right skill, 1 got
+a wrong one, and 71 got none; none of the 40 messages that need no skill got one. Matching the skill
+descriptions instead was wrong more often than right. All examples were written by a model, so real
+messages may score lower.
+
 ## How they were made
 
 1. `tools/catalogue.json` lists each skill: area, name, description and the points it must cover.

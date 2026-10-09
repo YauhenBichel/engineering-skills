@@ -1,0 +1,244 @@
+{"skill": "clarify-requirements", "text": "What exactly should happen when the user clicks submit? The current flow feels fuzzy."}
+{"skill": "clarify-requirements", "text": "I need a new dashboard. Please list the inputs, outputs, and constraints before we start."}
+{"skill": "clarify-requirements", "text": "Can we clarify the acceptance criteria for the onboarding flow?"}
+{"skill": "clarify-requirements", "text": "The ticket says make it faster but doesn't specify the target latency."}
+{"skill": "clarify-requirements", "text": "Who owns the payment webhook? I need the exact contract before coding."}
+{"skill": "clarify-requirements", "text": "Please define the edge cases for the export feature before we write anything."}
+{"skill": "break-down-work", "text": "This migration covers three services. How should I split the work?"}
+{"skill": "break-down-work", "text": "I have a month to ship the chat system. What are the first five steps?"}
+{"skill": "break-down-work", "text": "Break this epic into weekly deliverables that each ship something usable."}
+{"skill": "break-down-work", "text": "What’s the order of operations for the checkout refactor? I don't want deadlocks."}
+{"skill": "break-down-work", "text": "List the sequential tasks for moving the legacy app to the new platform."}
+{"skill": "break-down-work", "text": "How do I decompose this monster feature into bite-sized chunks?"}
+{"skill": "estimate-and-risks", "text": "How long will the database migration take, and what could delay it?"}
+{"skill": "estimate-and-risks", "text": "Is it feasible to ship the new auth flow by Friday?"}
+{"skill": "estimate-and-risks", "text": "Give me a realistic timeline for the search overhaul, including buffer time."}
+{"skill": "estimate-and-risks", "text": "What’s the ballpark effort for the PDF generator, and where might we get stuck?"}
+{"skill": "estimate-and-risks", "text": "Will this refactor break the release schedule? I need a risk assessment."}
+{"skill": "estimate-and-risks", "text": "How many sprints does the analytics dashboard need before it’s production-ready?"}
+{"skill": "design-architecture", "text": "How should we structure the payment service to handle retries and idempotency?"}
+{"skill": "design-architecture", "text": "Sketch a high-level layout for the new event-driven notification system."}
+{"skill": "design-architecture", "text": "What’s the best way to wire the frontend to the backend without tight coupling?"}
+{"skill": "design-architecture", "text": "Design the component boundaries for the new reporting module."}
+{"skill": "design-architecture", "text": "How do we split the monolith into independent services without losing transactional guarantees?"}
+{"skill": "design-architecture", "text": "Propose a system topology for the upcoming video processing pipeline."}
+{"skill": "write-adr", "text": "Document why we switched from PostgreSQL to TimescaleDB for metrics."}
+{"skill": "write-adr", "text": "Create a decision record for picking gRPC over REST for internal comms."}
+{"skill": "write-adr", "text": "Write up the rationale behind adopting the new state management library."}
+{"skill": "write-adr", "text": "Record the choice to use Redis for session storage instead of the database."}
+{"skill": "write-adr", "text": "Draft an architecture note explaining the move to serverless functions."}
+{"skill": "write-adr", "text": "Capture the trade-offs we discussed for the new cache layer in a formal log."}
+{"skill": "design-api", "text": "Define the request and response shapes for the new user provisioning endpoint."}
+{"skill": "design-api", "text": "What should the HTTP contract look like for the file upload service?"}
+{"skill": "design-api", "text": "Design the function signatures for the payment processing library before implementation."}
+{"skill": "design-api", "text": "Map out the routes, status codes, and error formats for the notification API."}
+{"skill": "design-api", "text": "How should the webhook payload be structured for third-party integrations?"}
+{"skill": "design-api", "text": "Draft the OpenAPI spec for the inventory sync interface."}
+{"skill": "model-data", "text": "What tables do we need to track user subscriptions and payment history?"}
+{"skill": "model-data", "text": "Design the schema for the new audit log with proper indexing."}
+{"skill": "model-data", "text": "How should we model the relationship between tenants and their workspaces?"}
+{"skill": "model-data", "text": "Propose a collection structure for the unstructured activity feed."}
+{"skill": "model-data", "text": "What’s the optimal table layout for the time-series sensor data?"}
+{"skill": "model-data", "text": "Map out the persistent stores for the new caching layer."}
+{"skill": "implement-feature", "text": "Build the dark mode toggle and persist the preference across sessions."}
+{"skill": "implement-feature", "text": "Add a new export button that generates CSVs from the current view."}
+{"skill": "implement-feature", "text": "Write the full flow for password reset, including email and token validation."}
+{"skill": "implement-feature", "text": "Implement the real-time chat widget with message persistence."}
+{"skill": "implement-feature", "text": "Create the onboarding wizard with progress tracking and skip options."}
+{"skill": "implement-feature", "text": "Ship the new search autocomplete with debounce and keyboard navigation."}
+{"skill": "write-python", "text": "Generate a script that parses the log file and extracts IP addresses."}
+{"skill": "write-python", "text": "Write a function to validate the CSV input and return structured records."}
+{"skill": "write-python", "text": "Create a data pipeline that fetches from the API and saves to disk."}
+{"skill": "write-python", "text": "Build a CLI helper that renames files based on a naming convention."}
+{"skill": "write-python", "text": "Write a utility module for formatting dates and handling timezone conversions."}
+{"skill": "write-python", "text": "Implement a background worker that processes queued jobs sequentially."}
+{"skill": "write-go", "text": "Write a concurrent worker pool that processes messages from a channel."}
+{"skill": "write-go", "text": "Create a HTTP handler that serves static files with proper caching headers."}
+{"skill": "write-go", "text": "Implement a struct that models the user profile with JSON tags."}
+{"skill": "write-go", "text": "Write a package to interact with the external storage service."}
+{"skill": "write-go", "text": "Build a command-line tool that reads config files and validates them."}
+{"skill": "write-go", "text": "Create a utility for marshaling protobuf messages efficiently."}
+{"skill": "write-typescript", "text": "Define the interface for the form data and add validation rules."}
+{"skill": "write-typescript", "text": "Write a generic hook for fetching API data with loading states."}
+{"skill": "write-typescript", "text": "Create a type-safe router that maps URL paths to handlers."}
+{"skill": "write-typescript", "text": "Implement a utility function that deeply merges configuration objects."}
+{"skill": "write-typescript", "text": "Write a React component that renders a responsive data table."}
+{"skill": "write-typescript", "text": "Build a type guard for narrowing the event payload type."}
+{"skill": "write-sql", "text": "Write a query to find users who haven't logged in for 90 days."}
+{"skill": "write-sql", "text": "Create a migration to add a composite index on the orders table."}
+{"skill": "write-sql", "text": "Write a stored procedure to archive old records and reclaim space."}
+{"skill": "write-sql", "text": "Generate a report query that aggregates daily revenue by region."}
+{"skill": "write-sql", "text": "Write a safe update statement that locks rows before processing."}
+{"skill": "write-sql", "text": "Create a view that flattens the nested JSON configuration for querying."}
+{"skill": "write-cli", "text": "Build a tool that scaffolds new projects from a template directory."}
+{"skill": "write-cli", "text": "Write a command that checks for missing environment variables and exits cleanly."}
+{"skill": "write-cli", "text": "Create a utility that formats and validates configuration files on save."}
+{"skill": "write-cli", "text": "Build a script that accepts subcommands for deployment stages."}
+{"skill": "write-cli", "text": "Write a terminal app that displays real-time system metrics with a progress bar."}
+{"skill": "write-cli", "text": "Create a batch processor that accepts piped input and outputs JSON."}
+{"skill": "concurrency", "text": "How do I safely share a counter across multiple goroutines?"}
+{"skill": "concurrency", "text": "Write a worker group pattern that waits for all tasks to finish."}
+{"skill": "concurrency", "text": "Fix the race condition in the cache update logic."}
+{"skill": "concurrency", "text": "Implement a mutex-protected queue that drops messages when full."}
+{"skill": "concurrency", "text": "How do I prevent deadlock when acquiring locks in this order?"}
+{"skill": "concurrency", "text": "Write an async task runner that limits parallel executions to five."}
+{"skill": "algorithms", "text": "What’s the most efficient way to find the top K frequent elements?"}
+{"skill": "algorithms", "text": "Design a lookup structure that supports O(1) inserts and range queries."}
+{"skill": "algorithms", "text": "Optimize the pathfinding routine to avoid full graph traversal."}
+{"skill": "algorithms", "text": "Implement a sliding window approach for the continuous stream analysis."}
+{"skill": "algorithms", "text": "What data structure handles dynamic frequency counts best?"}
+{"skill": "algorithms", "text": "Rewrite the sorting logic to use a heap instead of a list."}
+{"skill": "write-tests", "text": "Add unit tests for the validation logic with edge cases."}
+{"skill": "write-tests", "text": "Write integration tests that mock the database and check responses."}
+{"skill": "write-tests", "text": "Create a test suite that covers the authentication flow end-to-end."}
+{"skill": "write-tests", "text": "Add snapshot tests for the rendering component to catch regressions."}
+{"skill": "write-tests", "text": "Write property-based tests for the string transformation utility."}
+{"skill": "write-tests", "text": "Create a test harness that spins up the container and runs checks."}
+{"skill": "debug", "text": "The service crashes on startup with a segfault. Here’s the trace."}
+{"skill": "debug", "text": "Why does the query time out only on Tuesdays? Log attached."}
+{"skill": "debug", "text": "The UI freezes when rendering large lists. How do I find the bottleneck?"}
+{"skill": "debug", "text": "This function returns null instead of an object under load. Trace included."}
+{"skill": "debug", "text": "The deployment fails silently. How do I find the hidden error?"}
+{"skill": "debug", "text": "Memory keeps climbing until OOM. Where should I look first?"}
+{"skill": "review-code", "text": "Please check this diff for potential regressions and logic gaps."}
+{"skill": "review-code", "text": "Review the pull request and flag any security or performance concerns."}
+{"skill": "review-code", "text": "Look through these changes and suggest improvements before merging."}
+{"skill": "review-code", "text": "Check the new module for adherence to the coding standards."}
+{"skill": "review-code", "text": "Review the PR and verify the error handling covers all paths."}
+{"skill": "review-code", "text": "Scan this commit for accidental secrets or hardcoded credentials."}
+{"skill": "refactor", "text": "Clean up this module to remove duplicate validation logic."}
+{"skill": "refactor", "text": "Rearrange the class hierarchy to improve readability without changing behavior."}
+{"skill": "refactor", "text": "Extract the repeated setup code into a reusable helper."}
+{"skill": "refactor", "text": "Simplify the nested conditionals into a clearer decision table."}
+{"skill": "refactor", "text": "Rename variables and functions to better reflect their current purpose."}
+{"skill": "refactor", "text": "Break this massive function into smaller, focused utilities."}
+{"skill": "performance", "text": "The page loads slowly. Profile the request chain and find the bottleneck."}
+{"skill": "performance", "text": "Optimize the database query to reduce latency from 200ms to 50ms."}
+{"skill": "performance", "text": "Reduce memory usage by caching heavy objects and clearing references."}
+{"skill": "performance", "text": "Speed up the export routine by switching to streaming writes."}
+{"skill": "performance", "text": "Profile the hot path and eliminate unnecessary allocations."}
+{"skill": "performance", "text": "Tune the connection pool settings to handle peak traffic without dropping."}
+{"skill": "security-review", "text": "Check this endpoint for injection vulnerabilities and proper input sanitization."}
+{"skill": "security-review", "text": "Review the authentication flow for token leakage or fixation risks."}
+{"skill": "security-review", "text": "Scan the configuration files for hardcoded credentials or weak ciphers."}
+{"skill": "security-review", "text": "Verify that the file upload handler blocks executable extensions."}
+{"skill": "security-review", "text": "Check the session management for secure cookie flags and expiration."}
+{"skill": "security-review", "text": "Audit the third-party library integrations for known CVEs."}
+{"skill": "handle-errors-and-logging", "text": "Design a retry strategy with exponential backoff for failed network calls."}
+{"skill": "handle-errors-and-logging", "text": "Add structured logging that captures request IDs and context at every stage."}
+{"skill": "handle-errors-and-logging", "text": "Implement graceful degradation when the payment gateway goes down."}
+{"skill": "handle-errors-and-logging", "text": "Write a custom error type that distinguishes client timeouts from server failures."}
+{"skill": "handle-errors-and-logging", "text": "Set up log aggregation to route critical failures to the ops channel."}
+{"skill": "handle-errors-and-logging", "text": "Create an error boundary that catches UI crashes and reports them."}
+{"skill": "git-workflow", "text": "Help me resolve the merge conflict in the main branch."}
+{"skill": "git-workflow", "text": "Rebase this feature branch onto the latest develop branch cleanly."}
+{"skill": "git-workflow", "text": "Cherry-pick the hotfix commit into the release branch."}
+{"skill": "git-workflow", "text": "Tag the current commit with the version number and push it."}
+{"skill": "git-workflow", "text": "Create a new branch from staging and set up tracking."}
+{"skill": "git-workflow", "text": "Amend the last commit to fix the typo without creating a new entry."}
+{"skill": "ci-cd", "text": "Configure the pipeline to run tests on push and deploy on merge."}
+{"skill": "ci-cd", "text": "Fix the build matrix that fails on Node 18."}
+{"skill": "ci-cd", "text": "Add a stage to lint the code before running the test suite."}
+{"skill": "ci-cd", "text": "Set up artifact storage for the compiled binaries after each run."}
+{"skill": "ci-cd", "text": "Configure environment variables for the staging deployment stage."}
+{"skill": "ci-cd", "text": "Add a manual approval gate before pushing to production."}
+{"skill": "containers-and-deploy", "text": "Write a Dockerfile that minimizes image size for the Go binary."}
+{"skill": "containers-and-deploy", "text": "Create a compose file that links the app to the database and cache."}
+{"skill": "containers-and-deploy", "text": "Draft the Kubernetes deployment manifest with resource limits and probes."}
+{"skill": "containers-and-deploy", "text": "Update the Helm chart to support configurable replica counts."}
+{"skill": "containers-and-deploy", "text": "Set up a multi-stage build to separate dependencies from the runtime."}
+{"skill": "containers-and-deploy", "text": "Configure the ingress controller to route traffic to the new service."}
+{"skill": "dependencies", "text": "Upgrade the logging library to the latest stable release."}
+{"skill": "dependencies", "text": "Resolve the version conflict between the two routing packages."}
+{"skill": "dependencies", "text": "Pin the exact version of the cryptography package to avoid breakage."}
+{"skill": "dependencies", "text": "Remove the unused dependency that adds bloat to the bundle."}
+{"skill": "dependencies", "text": "Check for known vulnerabilities in the current package tree."}
+{"skill": "dependencies", "text": "Switch the build tool to a lighter alternative without losing features."}
+{"skill": "observability", "text": "Add custom metrics to track queue depth and processing time."}
+{"skill": "observability", "text": "Set up distributed tracing to follow requests across the microservices."}
+{"skill": "observability", "text": "Create a dashboard that visualizes error rates and latency percentiles."}
+{"skill": "observability", "text": "Configure alert rules that trigger when CPU usage exceeds 80%."}
+{"skill": "observability", "text": "Instrument the code to emit structured logs with correlation IDs."}
+{"skill": "observability", "text": "Wire up the health check endpoint to report dependency status."}
+{"skill": "incident-response", "text": "The payment service is down. Walk me through the rollback procedure."}
+{"skill": "incident-response", "text": "We’re seeing a spike in 500 errors. What’s the first step to contain it?"}
+{"skill": "incident-response", "text": "Draft a status page update for the ongoing database outage."}
+{"skill": "incident-response", "text": "Run a war room checklist to isolate the failing component."}
+{"skill": "incident-response", "text": "Escalate the incident and assign roles for debugging and communication."}
+{"skill": "incident-response", "text": "Verify the hotfix is deployed and monitor for stability before closing."}
+{"skill": "data-durability", "text": "Set up automated daily snapshots with point-in-time recovery enabled."}
+{"skill": "data-durability", "text": "Design a zero-downtime migration strategy for adding a new column."}
+{"skill": "data-durability", "text": "Verify the backup integrity by running a restore test in staging."}
+{"skill": "data-durability", "text": "Configure WAL archiving to prevent data loss during crashes."}
+{"skill": "data-durability", "text": "Plan a replica failover procedure for the primary database node."}
+{"skill": "data-durability", "text": "Document the restore steps and verify the RTO meets SLA requirements."}
+{"skill": "write-docs", "text": "Draft a README that explains how to set up the local environment."}
+{"skill": "write-docs", "text": "Write a usage guide for the new configuration flags."}
+{"skill": "write-docs", "text": "Create an API reference with examples for each endpoint."}
+{"skill": "write-docs", "text": "Document the deployment steps for the staging and production environments."}
+{"skill": "write-docs", "text": "Write a contributing guide that outlines the PR workflow and standards."}
+{"skill": "write-docs", "text": "Update the changelog to reflect the recent bug fixes and features."}
+{"skill": "explain-code", "text": "Walk me through how this validation logic processes the input stream."}
+{"skill": "explain-code", "text": "What does this block of code actually do step by step?"}
+{"skill": "explain-code", "text": "Break down the control flow in the main loop for me."}
+{"skill": "explain-code", "text": "Explain the purpose of this utility and when to call it."}
+{"skill": "explain-code", "text": "How does the caching mechanism interact with the database layer here?"}
+{"skill": "explain-code", "text": "Translate this logic into plain English so I can audit it."}
+{"skill": "data-analysis", "text": "Analyze this CSV and tell me the distribution of response times."}
+{"skill": "data-analysis", "text": "What correlations exist between user signup date and first purchase?"}
+{"skill": "data-analysis", "text": "Clean the dataset by removing duplicates and handling missing values."}
+{"skill": "data-analysis", "text": "Aggregate the sales data by region and month for the report."}
+{"skill": "data-analysis", "text": "Calculate the conversion funnel metrics from the raw event logs."}
+{"skill": "data-analysis", "text": "Identify outliers in the transaction table and summarize their patterns."}
+{"skill": "ml-experiment", "text": "Run a hyperparameter sweep on the image classifier and log the loss curves."}
+{"skill": "ml-experiment", "text": "Train the model on the training split and evaluate on the validation set."}
+{"skill": "ml-experiment", "text": "Compare the inference latency of the quantized version against the baseline."}
+{"skill": "ml-experiment", "text": "Save checkpoints every epoch and resume training from the last saved state."}
+{"skill": "ml-experiment", "text": "Tune the learning rate schedule to reduce overfitting on the test set."}
+{"skill": "ml-experiment", "text": "Generate a confusion matrix to analyze classification errors across classes."}
+{"skill": "research-and-compare", "text": "Compare the trade-offs between using Kafka and RabbitMQ for event streaming."}
+{"skill": "research-and-compare", "text": "Research options for server-side rendering and recommend the best fit."}
+{"skill": "research-and-compare", "text": "Evaluate the performance benchmarks of the three database drivers we’re considering."}
+{"skill": "research-and-compare", "text": "Look into alternatives for the current logging library and summarize pros and cons."}
+{"skill": "research-and-compare", "text": "Compare the pricing tiers and feature gaps between the two cloud providers."}
+{"skill": "research-and-compare", "text": "Investigate the latest standards for state management and outline the top contenders."}
+{"skill": "none", "text": "Hey, how's your day going?"}
+{"skill": "none", "text": "What's the capital of Portugal?"}
+{"skill": "none", "text": "Translate good morning to Spanish."}
+{"skill": "none", "text": "I'm hungry, suggest a quick pasta recipe."}
+{"skill": "none", "text": "Ok, got it. Thanks!"}
+{"skill": "none", "text": "In Russian please."}
+{"skill": "none", "text": "What time is it in Tokyo?"}
+{"skill": "none", "text": "Write a haiku about coffee."}
+{"skill": "none", "text": "Can you summarize this news article?"}
+{"skill": "none", "text": "What's the weather like today?"}
+{"skill": "none", "text": "Solve 15 times 8 plus 2."}
+{"skill": "none", "text": "Tell me a fun fact about space."}
+{"skill": "none", "text": "I'm running late, see you soon."}
+{"skill": "none", "text": "What does serendipity mean?"}
+{"skill": "none", "text": "Draft a birthday message for my mom."}
+{"skill": "none", "text": "How do I make sourdough bread?"}
+{"skill": "none", "text": "What's the distance to the moon?"}
+{"skill": "none", "text": "Translate thank you very much to Japanese."}
+{"skill": "none", "text": "List three healthy breakfast ideas."}
+{"skill": "none", "text": "Why is the sky blue?"}
+{"skill": "none", "text": "Can you recommend a good book?"}
+{"skill": "none", "text": "What's the best way to water herbs?"}
+{"skill": "none", "text": "Write a short poem about rain."}
+{"skill": "none", "text": "How many hours in a leap year?"}
+{"skill": "none", "text": "What's the current population of India?"}
+{"skill": "none", "text": "Explain the theory of relativity simply."}
+{"skill": "none", "text": "Can you tell me a joke?"}
+{"skill": "none", "text": "What's the origin of the word hello?"}
+{"skill": "none", "text": "Draft a resignation letter politely."}
+{"skill": "none", "text": "How do I fix a leaky faucet?"}
+{"skill": "none", "text": "What's the square root of 144?"}
+{"skill": "none", "text": "Recommend a documentary about nature."}
+{"skill": "none", "text": "What's the tallest mountain in the world?"}
+{"skill": "none", "text": "Translate see you later to French."}
+{"skill": "none", "text": "Write a thank you note for a gift."}
+{"skill": "none", "text": "How do I start composting at home?"}
+{"skill": "none", "text": "What's the boiling point of water in Fahrenheit?"}
+{"skill": "none", "text": "Can you summarize the plot of Hamlet?"}
+{"skill": "none", "text": "What's the best way to learn piano?"}
+{"skill": "none", "text": "Write a quick email to reschedule a meeting."}
