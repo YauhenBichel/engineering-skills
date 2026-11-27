@@ -1,8 +1,96 @@
 # engineering-skills
 
-34 skills for software and computer science project work: from a vague request to a released, running,
-documented system. Each skill is a short, checkable method in the
-[Agent Skills](https://agentskills.io) format, written so that local models can follow it.
+34 ready-made skills (Agent Skills `SKILL.md` files) that tell an AI coding assistant, including small local models, how to plan, build, test, debug, review, ship and operate software, step by step.
+
+![Validation of the 34 skills](docs/demo.svg)
+
+The picture is real output from a clean clone. Here is one whole skill, `skills/debug/SKILL.md`:
+
+```markdown
+---
+name: debug
+description: Finds the root cause of a bug methodically. Use for errors, crashes, wrong results or flaky behaviour.
+---
+
+## Steps
+1. Reproduce the bug with the smallest input. Run `pytest tests/test_bug.py` or the exact failing command in isolation.
+2. Read the full error and stack trace. Record the exception type, file path, and line number.
+3. Form one hypothesis. Test it using logs, a debugger, or `git bisect`. Do not guess.
+4. Find the root cause, not the symptom. Verify the failing condition matches your hypothesis.
+5. Write a failing test that captures the exact failure. Run it to confirm it fails.
+6. Apply the fix. Run the full test suite. Show the new test passing and existing tests green.
+7. Scan related code paths. Note what else the cause may affect and log follow-up tasks.
+
+## Checklist
+- [ ] Reproduction is minimal and deterministic
+- [ ] Full stack trace and error context are captured
+- [ ] Single hypothesis tested with evidence
+- [ ] Root cause identified, not a symptom workaround
+- [ ] Failing test written and confirmed to fail before the fix
+- [ ] Fix applied and all tests pass
+- [ ] Related code paths reviewed for side effects
+
+## Output
+- Minimal reproduction command or test case
+- Root cause explanation with file and line reference
+- Failing test code and the applied fix
+- List of affected code paths or follow-up tasks
+```
+
+## Quick start
+
+Claude Code (project skills; use `~/.claude/skills/` instead to install for all projects):
+
+```bash
+git clone https://github.com/YauhenBichel/engineering-skills
+mkdir -p my-project/.claude/skills
+cp -r engineering-skills/skills/* my-project/.claude/skills/
+```
+
+Each skill is then a folder `my-project/.claude/skills/<name>/SKILL.md`, which is the layout Claude Code reads. The copy gives 34 folders.
+
+Check that the skills are well formed (needs Python 3, no packages):
+
+```bash
+cd engineering-skills
+python3 tools/check.py
+```
+
+Expected output: `34 skills checked, 0 problems`
+
+Other agents that read Agent Skills: copy the same folders to the skills folder that agent documents. Any chat: paste one `SKILL.md` before your question.
+
+## When to use it
+
+- You want your assistant to follow a checkable method (steps, a checklist, a defined output) for a common job, such as `debug`, `write-tests`, `review-code` or `write-adr`.
+- You run a local model that loses the thread on long, vague prompts.
+
+## When not to use it
+
+- You need skills for one language framework or one company's rules. These are general.
+- You need proof that skills improve answers. That is not measured yet (see Limits).
+
+## FAQ
+
+### What are Agent Skills?
+
+A skill is a folder with a `SKILL.md` file. Its front matter has a `name` and a `description`, and the body tells the model what to do. Tools that support the format load a skill when the task matches its description. The format is described at [agentskills.io](https://agentskills.io).
+
+### How do I install skills in Claude Code?
+
+Copy the skill folders into `.claude/skills/` in your project, or into `~/.claude/skills/` for all projects, as shown above.
+
+### Does it send my data anywhere?
+
+No. The repository is Markdown files and small Python scripts. Only `tools/draft.py` calls a model server, and only the one you configure.
+
+### How is it different from other skill collections?
+
+These are short (about 250 words each), checked by a script in CI, and were written and corrected by hand after a local model drafted them. They were made for local models; they work with any model.
+
+### Which skills are there?
+
+See the table below and `SKILLS.md`, which gives one line on when to use each.
 
 ## What is in it
 
