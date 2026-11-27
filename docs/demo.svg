@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1014" height="324" viewBox="0 0 1014 324" role="img" aria-label="Terminal output">
+<rect width="1014" height="324" rx="10" fill="#161b22" stroke="#30363d"/>
+<circle cx="22" cy="20" r="6" fill="#ff5f56"/><circle cx="42" cy="20" r="6" fill="#ffbd2e"/><circle cx="62" cy="20" r="6" fill="#27c93f"/>
+<g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">
+<text x="24" y="52" fill="#7ee787">$ python3 tools/check.py</text>
+<text x="24" y="72" fill="#e6edf3">34 skills checked, 0 problems</text>
+<text x="24" y="92" fill="#e6edf3"></text>
+<text x="24" y="112" fill="#7ee787">$ python3 tools/build.py &amp;&amp; git diff --exit-code &amp;&amp; echo clean</text>
+<text x="24" y="132" fill="#e6edf3">34 skills built</text>
+<text x="24" y="152" fill="#e6edf3">clean</text>
+<text x="24" y="172" fill="#7ee787">$ ls skills | wc -l</text>
+<text x="24" y="192" fill="#e6edf3">34</text>
+<text x="24" y="212" fill="#7ee787">$ head -4 skills/debug/SKILL.md</text>
+<text x="24" y="232" fill="#e6edf3">---</text>
+<text x="24" y="252" fill="#e6edf3">name: debug</text>
+<text x="24" y="272" fill="#e6edf3">description: Finds the root cause of a bug methodically. Use for errors, crashes, wrong results or flaky behaviour.</text>
+<text x="24" y="292" fill="#e6edf3">---</text>
+</g></svg>
